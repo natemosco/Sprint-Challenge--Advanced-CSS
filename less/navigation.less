@@ -12,15 +12,18 @@
     h1{
         width:35%;
         font-size:4rem;
-        text-align: center
-    }
-    nav{
-        width:30%;
-       
-        .flex(row, space-between, center, no-wrap);
+        text-align: center;
         @media @phone {
             width:100%;
-           
+        }
+    }
+    nav{
+        width:100%;
+       padding: 0 20%;
+        .flex(row, space-evenly, center, no-wrap);
+        @media @phone {
+            padding: 0;
+            justify-content: space-evenly;
         }
         a{
             text-decoration: none;

@@ -185,17 +185,24 @@ p {
   font-size: 4rem;
   text-align: center;
 }
+@media (max-width:500px) {
+  .navigation-section h1 {
+    width: 100%;
+  }
+}
 .navigation-section nav {
-  width: 30%;
+  width: 100%;
+  padding: 0 20%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: no-wrap;
 }
 @media (max-width:500px) {
   .navigation-section nav {
-    width: 100%;
+    padding: 0;
+    justify-content: space-evenly;
   }
 }
 .navigation-section nav a {
