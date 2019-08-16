@@ -34,13 +34,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website is a fixed or static website that simply sets fixed breakpoints to respond only to screen size using media queries.
+
+Whereas a fully responsive website is more accessible via making the text responsive to zooming with REM instead of static pixels, uses flex properties to adjust to the in-between breakpoint spaces for a viewport, also includes media query breakpoints, and uses small portions of fixed layout when desired or needed. This all requires more planning, and is considered the best format for a website to promote user experience.
+
 2. Describe what it means to be mobile first vs desktop first.
+Which ever layout is designed and constructed first determines "mobile or desktop first". The next step is always to design for incrementally larger breakpoint-media-queries when using mobile first. When using desktop first the next step is to design incrementally smaller breakpoint-media-queries. The goal to accomplish is to make the "first" design available to other screen sizes in a format that will not break the flow of the webpage. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Setting 62.5% as a fontsize is currently equivalent to setting the default font size to approximately size 10 font. Moving forward the REM value measures against the Root font size which in this case is 10. Now all fonts can easily be calculated by multiplying the integer of REM by a factor of 10.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Once upon a time we had to write and format all code by hand. Now you get to have a computer format the input you give into an alternate and expanded format. The beauty of this is that you get to basically write a shorthand version of your previous code that saves you thousands of keystrokes and visually allows you organize your work to match the files you are styling. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Favorite concept:
+The shorthand we put in by using functions and mixins will not work syntactically if the structure does not match appropriate nesting rules. This creates an error and trouble shooting the shorthand becomes easy. This is much harder to do when you simply write out every line of code.
+
+Most confusing concept:
+Putting into practice the selection of certain mixin properties without activating the others including the defaults. This is possible but still confusing.
+
+Also, the ability to use functions within parametric mixins gets a little confusing. This is a really cool aspect of the preprocessor that needs more practice to acheive mastery.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
