@@ -34,13 +34,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website is a fixed or static website that simply sets fixed breakpoints to respond only to screen size using media queries.
+
+Whereas a fully responsive website is more accessible via making the text responsive to zooming with REM instead of static pixels, uses flex properties to adjust to the in-between breakpoint spaces for a viewport, also includes media query breakpoints, and uses small portions of fixed layout when desired or needed. This all requires more planning, and is considered the best format for a website to promote user experience.
+
 2. Describe what it means to be mobile first vs desktop first.
+Which ever layout is designed and constructed first determines "mobile or desktop first". The next step is always to design for incrementally larger breakpoint-media-queries when using mobile first. When using desktop first the next step is to design incrementally smaller breakpoint-media-queries. The goal to accomplish is to make the "first" design available to other screen sizes in a format that will not break the flow of the webpage. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Setting 62.5% as a fontsize is currently equivalent to setting the default font size to approximately size 10 font. Moving forward the REM value measures against the Root font size which in this case is 10. Now all fonts can easily be calculated by multiplying the integer of REM by a factor of 10.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Once upon a time we had to write and format all code by hand. Now you get to have a computer format the input you give into an alternate and expanded format. The beauty of this is that you get to basically write a shorthand version of your previous code that saves you thousands of keystrokes and visually allows you organize your work to match the files you are styling. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Favorite concept:
+The shorthand we put in by using functions and mixins will not work syntactically if the structure does not match appropriate nesting rules. This creates an error and trouble shooting the shorthand becomes easy. This is much harder to do when you simply write out every line of code.
+
+Most confusing concept:
+Putting into practice the selection of certain mixin properties without activating the others including the defaults. This is possible but still confusing.
+
+Also, the ability to use functions within parametric mixins gets a little confusing. This is a really cool aspect of the preprocessor that needs more practice to acheive mastery.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -65,7 +82,7 @@ Follow these steps for completing your project.
  
 
 ### Preprocessor Set up
-
+DONE X
 * [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
 * [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
 * [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
@@ -78,7 +95,7 @@ Your finished project must include all of the following requirements:
 
 ### Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+* [ X ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
 1.variables.less
@@ -94,31 +111,31 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [ X ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
 
-* [ ] Add a viewport meta tag to the head of your index.html page
+* [ X ] Add a viewport meta tag to the head of your index.html page
 
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [ X ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
-* [ ] Navigation Styles: Use the `navigation.less` file for styling.
+* [ X ] Navigation Styles: Use the `navigation.less` file for styling.
 
-* [ ] Main Content Styles: Use the `home-page.less` file for styling
+* [ X ] Main Content Styles: Use the `home-page.less` file for styling
 
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [ X ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
+* [X ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 
-* [ ]  Use at least 2 parameters to create your button
+* [X ]  Use at least 2 parameters to create your button
 
-* [ ] Create a hover state that swaps the background color and font color of the base button styles.
+* [X ] Create a hover state that swaps the background color and font color of the base button styles.
 
 ### Mobile Design
 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
+* [X ] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
+* [ X ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
-* [ ] Push your changes and create a pull request if you haven't already.
+* [ X ] Push your changes and create a pull request if you haven't already.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
